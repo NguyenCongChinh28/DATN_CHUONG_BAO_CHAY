@@ -1,0 +1,3 @@
+[submodule "02.Firmware/port/lora_stack"]
+	path = 02.Firmware/port/lora_stack
+	url = https://github.com/ByTechJSC/lora_stack

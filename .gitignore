@@ -1,0 +1,10 @@
+﻿*.crf
+02.Firmware/Project/Keil_project/output
+*.HuyTV
+*.scvd
+02.Firmware/Project/Keil_project/RTE/_GD32E23x/RTE_Components.h
+02.Firmware/stm32/BST01_Lamp_Button/MDK-ARM/DebugConfig/BST01_Lamp_Button_STM32F103VE_1.0.0.dbgconf
+02.Firmware/stm32/BST01_Lamp_Button/MDK-ARM/BST01_Lamp_Button/BST01_Lamp_Button.hex
+02.Firmware/stm32/BST01_Lamp_Button/MDK-ARM/RTE/_BST01_Lamp_Button/RTE_Components.h
+02.Firmware/stm32/BST01_Lamp_Button/MDK-ARM/JLinkLog.txt
+02.Firmware/stm32/BST01_Lamp_Button/MDK-ARM/JLinkSettings.ini
