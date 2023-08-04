@@ -121,11 +121,13 @@ void HAL_SPI_MspDeInit(SPI_HandleTypeDef* spiHandle)
 void spi_tx(uint8_t *write_data, uint8_t *rx_dummy_data, uint32_t len)
 {
     volatile uint32_t delay = 1000;
-    HAL_GPIO_WritePin(LORA_SPI_CS_GPIO_Port, LORA_SPI_CS_Pin, GPIO_PIN_RESET);
-    while (delay--);
+    HAL_GPIO_WritePin(LORA_SPI_CS_GPIO_Port,LORA_SPI_CS_Pin,GPIO_PIN_RESET);
+    while(delay--);
     HAL_SPI_TransmitReceive(&hspi1, write_data, rx_dummy_data, len, 1000);
-    HAL_GPIO_WritePin(LORA_SPI_CS_GPIO_Port, LORA_SPI_CS_Pin, GPIO_PIN_SET);
+    HAL_GPIO_WritePin(LORA_SPI_CS_GPIO_Port,LORA_SPI_CS_Pin,GPIO_PIN_SET);
+    
 }
+        
 
 void spi_rx(uint8_t *rx_data, uint8_t *tx_dummy_data, uint32_t len)
 {

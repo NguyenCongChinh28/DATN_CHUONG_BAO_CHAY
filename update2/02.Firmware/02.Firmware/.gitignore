@@ -1,0 +1,46 @@
+﻿*.d
+*.o
+*.htm
+*.lnp
+*.dep
+Template/Keil_project/output/Project.axf
+*.huybk
+.vscode
+build
+Node/Template/Keil_project/output/Project.axf
+Node/Template/Keil_project/Project.uvoptx
+Node/Template/Keil_project/JLinkLog.txt
+Node/Template/Keil_project/list
+Node/Template/lwrb/dev/VisualStudio
+Node/Template/lwrb/docs
+hardware/NODE_LORA_THIENTHANH_V1.0 (3-3-2021 1-59-37 PM)/Sch/__Previews
+hardware/NODE_LORA_THIENTHANH_V1.0 (3-3-2021 1-59-37 PM)/Sch/__Previews/04. LORA.SchDocPreview
+hardware/NODE_LORA_THIENTHANH_V1.0 (3-3-2021 1-59-37 PM)/Sch/__Previews/04. LORA.SchDocPreview
+hardware/NODE_LORA_THIENTHANH_V1.0 (3-3-2021 1-59-37 PM)/Sch/__Previews
+hardware/NODE_LORA_THIENTHANH_V1.0 (3-3-2021 1-59-37 PM)/Sch/__Previews
+hardware/GW_LORA_THIENTHANH_V1.0 (3-3-2021 1-43-30 PM)/Sch/__Previews
+hardware/NODE_LORA_THIENTHANH_V1.0 (3-3-2021 1-59-37 PM)/Sch/__Previews
+*.iex
+*.axf
+*.sct
+Node/Project/Keil_project/JLinkLog.txt
+Node/Project/Keil_project/JLinkSettings.ini
+hardware/GW_LORA_THIENTHANH_V1.0 (3-3-2021 1-43-30 PM)/Sch/__Previews
+*.map
+sx126xdriver_1_
+Gateway/esp32/components/lora_v2/en.i-cube_lrwan
+hardware/GW_LORA_THIENTHANH_V1.0 (3-4-2021 8-45-22 AM)/Sch/__Previews
+hardware/NODE_LORA_THIENTHANH_V1.0 (3-4-2021 8-44-57 AM)/Sch/__Previews
+hardware/NODE_LORA_THIENTHANH_V1.0 (3-4-2021 8-44-57 AM)/Sch/__Previews
+hardware/GW_LORA_THIENTHANH_V1.0 (3-4-2021 8-45-22 AM)/Sch/__Previews
+stm32l010/IO_Expander/MDK-ARM/startup_stm32l010x6.lst
+stm32l010/IO_Expander/MDK-ARM/RTE/_IO_Expander/RTE_Components.h
+stm32l010/IO_Expander/MDK-ARM/JLinkLog.txt
+hardware/v3/NODE_LORA_THIENTHANH_V1.0.2 (4-27-2021 2-45-13 PM)/Sch/__Previews
+hardware/v2/NODE_LORA_THIENTHANH_V1.0.1 (4-9-2021 11-29-17 AM)/Sch/__Previews
+*.huybk213
+*.lst
+Hwc_node/Project/Keil_project/JLinkLog.txt
+Hwc_node/Project/Keil_project/Project.uvoptx
+hardware/v3/NODE_LORA_THIENTHANH_V1.0.2 (4-27-2021 2-45-13 PM)/Sch/__Previews
+hardware/v3/GW_LORA_THIENTHANH_V1.0.2 (4-27-2021 2-45-31 PM)/Sch/__Previews

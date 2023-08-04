@@ -87,6 +87,7 @@ void app_lora_init(app_lora_cfg_t *conf)
     hal_conf.startup_ms = conf->startup_ms;
     
     hal_conf.enable_crc = conf->enable_crc;
+    APP_DBG_INF("init lora hall\r\n");
     lora_hal_init(&hal_conf);
 
     m_master_msg_ctx.msg.header.network_id = conf->network_id;

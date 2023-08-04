@@ -800,7 +800,7 @@ void RadioSetTxConfig(RadioModems_t modem, int8_t power, uint32_t fdev,
 
             SX126x.PacketParams.PacketType = PACKET_TYPE_LORA;
             
-            APP_DBG_INF("SF %d\r\n", SX126x.ModulationParams.Params.LoRa.SpreadingFactor);
+            APP_DBG_INF("sf SF %d\r\n", SX126x.ModulationParams.Params.LoRa.SpreadingFactor);
             if ((SX126x.ModulationParams.Params.LoRa.SpreadingFactor == LORA_SF5) ||
                 (SX126x.ModulationParams.Params.LoRa.SpreadingFactor == LORA_SF6))
             {

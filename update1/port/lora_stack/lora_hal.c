@@ -192,7 +192,8 @@ void lora_hal_reset(void)
     m_lora_on_bus = false;
     systime_stop(&m_timer_power_monitor);
     systime_stop(&m_timer_transmit_timeout);
-	APP_DBG_VERBOSE("Clear busy flag\r\n");
+    APP_DBG_INF("Clear busy flag\r\n");
+	//APP_DBG_VERBOSE("Clear busy flag\r\n");
     lora_hal_clear_channel_busy_flag();
 }
 

@@ -1,0 +1,2 @@
+crc.c:4:10:ComputeCrc	24	static
+crc.c:25:10:RadioComputeCRC	24	static

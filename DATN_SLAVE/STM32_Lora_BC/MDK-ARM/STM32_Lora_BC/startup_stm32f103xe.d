@@ -1,0 +1,1 @@
+stm32_lora_bc\startup_stm32f103xe.o: startup_stm32f103xe.s

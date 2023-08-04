@@ -9,5 +9,5 @@ void app_wdt_start(void)
 
 void app_wdt_feed(void)
 {
-    iwdg_reload();
+   iwdg_reload();
 }

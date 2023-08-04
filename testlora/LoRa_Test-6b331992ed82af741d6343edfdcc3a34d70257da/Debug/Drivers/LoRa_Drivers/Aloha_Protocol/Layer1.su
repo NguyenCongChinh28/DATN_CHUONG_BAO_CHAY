@@ -1,0 +1,10 @@
+Layer1.c:46:6:L1_Init	24	static
+Layer1.c:66:9:LoRa_WriteBuffer	24	static
+Layer1.c:89:23:Send_Packet	24	static
+Layer1.c:118:16:LoRa_ASynTransmit	16	static
+Layer1.c:142:16:Receive_Handle	24	static
+Layer1.c:172:16:LoRa_BufferHandle	16	static
+Layer1.c:216:6:LoRa_SendBroadCast	16	static
+Layer1.c:233:6:LoRa_SendACK	16	static
+Layer1.c:250:6:LoRa_Polling	16	static
+Layer1.c:334:6:Timer_Callback	4	static

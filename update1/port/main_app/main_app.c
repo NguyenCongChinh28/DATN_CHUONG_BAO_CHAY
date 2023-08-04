@@ -148,10 +148,10 @@ void sos_fire_alarm_led_indicator_poll(void);
 void main_app(void)
 {
     reset_reason = board_hw_get_reset_reason();
-    app_wdt_start();
+    //app_wdt_start();
     
     ringbuffer_uart_initialize();
-    board_hw_uart_debug_initialize();
+    board_hw_uart_debug_initialize();   //Initialize hardware uart debug
     
     app_dbg_init(board_hw_get_ms, NULL);
     app_dbg_register_callback_print(debug_puts);
@@ -215,6 +215,7 @@ void main_app(void)
     lora_cfg.startup_ms = 50;
     lora_cfg.event = on_new_lora_data;
     lora_cfg.unauthen_data_event = on_new_unknown_lora_data_received;
+    APP_DBG_INF("init app lora\r\n");
     app_lora_init(&lora_cfg);
 
     app_lora_set_network_id(m_net_info.network_id);
@@ -289,6 +290,7 @@ static void task_wdt(uint32_t timeout_ms)
     task_cli();
     if (systime_is_timer_elapse(&m_timer_wdt, timeout_ms))
     {
+        //APP_DBG_INF("app wdt");
         systime_create(&m_timer_wdt);
         app_wdt_feed();
 		if (timeout_not_received_msg_reset_lora <= 0)
@@ -351,7 +353,6 @@ static void task_1000ms()
                 APP_DBG_INF("Keep alive in next %02d:%02d:%02d\r\n", hour, min, elapse_s % 60);
             }
         }
-        
         uint32_t found_sensor_alarm = 0;
         for (uint32_t i = 0; i < MAX_LIST_SENSOR_ALARM_SUPPORT; i++)
         {
@@ -610,6 +611,8 @@ extern void RadioOnDioIrq(void);
 static uint32_t m_tick_poll_lora_spi = 0;
 static void task_lora_rx(void *arg)
 {
+
+    //APP_DBG_WRN("lora rx\r\n");
     static uint32_t m_last_tick = 0;
     if (sys_now_ms() != m_last_tick)
     {
@@ -1010,7 +1013,8 @@ static bool lora_read_pin(uint32_t pin)
 }
 
 static void task_led_btn(void *arg)
-{
+{ 
+    //APP_DBG_WRN("task led btn\r\n");
     if (systime_is_timer_elapse(&m_timer_led_btn, (uint32_t)arg))
     {
         systime_create(&m_timer_led_btn);
@@ -1116,6 +1120,7 @@ uint32_t debug_puts(const void *buffer, uint32_t size)
 
 void sos_fire_alarm_led_indicator_poll(void)
 {
+    //APP_DBG_WRN("sos fire alarm\r\n");
     if (m_local_alarm_status || m_remote_gateway_alarm_status || m_remote_sensor_alarm_status)
     {
         app_led_blink(1, 0xFFFFFFFF, 1000, 1000);

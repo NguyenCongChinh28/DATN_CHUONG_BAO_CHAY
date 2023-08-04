@@ -1,0 +1,3 @@
+User_Uart_Ipw.c:9:6:User_Uart_Ipw_Init	16	static
+User_Uart_Ipw.c:18:16:User_Uart_Ipw_AsyncTransmit	24	static
+User_Uart_Ipw.c:30:16:User_Uart_Ipw_Received	32	static

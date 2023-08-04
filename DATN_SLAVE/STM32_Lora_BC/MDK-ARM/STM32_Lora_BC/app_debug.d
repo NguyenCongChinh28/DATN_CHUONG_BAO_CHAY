@@ -1,0 +1,9 @@
+stm32_lora_bc\app_debug.o: ..\Components\App_debug\app_debug.c
+stm32_lora_bc\app_debug.o: ..\Components\App_debug\app_debug.h
+stm32_lora_bc\app_debug.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+stm32_lora_bc\app_debug.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+stm32_lora_bc\app_debug.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+stm32_lora_bc\app_debug.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+stm32_lora_bc\app_debug.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+stm32_lora_bc\app_debug.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\ctype.h
+stm32_lora_bc\app_debug.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
